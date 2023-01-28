@@ -4,10 +4,7 @@ import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import "react-pro-sidebar/dist/css/styles.css";
 import { tokens } from "../../theme";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import { SidebarData } from "../../data/mockData";
-import { SidebarPagesData } from "../../data/mockData";
-import { SidebarChartData } from "../../data/mockData";
-import { SidebarDashboard } from "../../data/mockData";
+import { SidebarFullMenuData } from "../../data/mockData";
 import SidebarMenuData from "./SidebarMenuData";
 
 const Sidebar = () => {
@@ -70,7 +67,7 @@ const Sidebar = () => {
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src={`../../assets/user.png`}
+                  src="https://avatars.githubusercontent.com/u/105858153?v=4"
                   style={{ cursor: "pointer", borderRadius: "50%" }}
                 />
               </Box>
@@ -91,13 +88,15 @@ const Sidebar = () => {
           )}
 
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
-            <SidebarMenuData dataType={SidebarDashboard} />
-
-            <SidebarMenuData dataType={SidebarData} menuName="Data" />
-
-            <SidebarMenuData dataType={SidebarPagesData} menuName="Pages" />
-
-            <SidebarMenuData dataType={SidebarChartData} menuName="Charts" />
+            {SidebarFullMenuData.map((item, idx) => {
+              return (
+                <SidebarMenuData
+                  key={idx}
+                  dataType={item.dataType}
+                  menuName={item.typeTitle}
+                />
+              );
+            })}
           </Box>
         </Menu>
       </ProSidebar>

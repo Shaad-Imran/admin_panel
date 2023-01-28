@@ -11,70 +11,80 @@ import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 
-export const SidebarDashboard = [
+export const SidebarFullMenuData = [
   {
-    title: "Dashboard",
-    to: "/",
-    icon: <HomeOutlinedIcon />,
-  },
-];
-
-export const SidebarData = [
-  {
-    title: "Manage Team",
-    to: "/team",
-    icon: <PeopleOutlinedIcon />,
+    dataType: [
+      {
+        title: "Dashboard",
+        to: "/",
+        icon: <HomeOutlinedIcon />,
+      },
+    ],
   },
   {
-    title: "Contacts Information",
-    to: "/contacts",
-    icon: <ContactsOutlinedIcon />,
+    typeTitle: "Data",
+    dataType: [
+      {
+        title: "Manage Team",
+        to: "/team",
+        icon: <PeopleOutlinedIcon />,
+      },
+      {
+        title: "Contacts Information",
+        to: "/contacts",
+        icon: <ContactsOutlinedIcon />,
+      },
+      {
+        title: "Invoices Balances",
+        to: "/invoices",
+        icon: <ReceiptOutlinedIcon />,
+      },
+    ],
   },
   {
-    title: "Invoices Balances",
-    to: "/invoices",
-    icon: <ReceiptOutlinedIcon />,
-  },
-];
-
-export const SidebarPagesData = [
-  {
-    title: "Profile Form",
-    to: "/form",
-    icon: <PersonOutlinedIcon />,
-  },
-  {
-    title: "Calendar",
-    to: "/calendar",
-    icon: <CalendarTodayOutlinedIcon />,
-  },
-  {
-    title: "FAQ Page",
-    to: "/faq",
-    icon: <HelpOutlineOutlinedIcon />,
-  },
-];
-
-export const SidebarChartData = [
-  {
-    title: "Bar Chart",
-    to: "/bar",
-    icon: <BarChartOutlinedIcon />,
+    typeTitle: "Pages",
+    dataType: [
+      {
+        title: "Profile Form",
+        to: "/form",
+        icon: <PersonOutlinedIcon />,
+      },
+      {
+        title: "Calendar",
+        to: "/calendar",
+        icon: <CalendarTodayOutlinedIcon />,
+      },
+      {
+        title: "FAQ Page",
+        to: "/faq",
+        icon: <HelpOutlineOutlinedIcon />,
+      },
+    ],
   },
   {
-    title: "Pie Chart",
-    to: "/pie",
-    icon: <PieChartOutlineOutlinedIcon />,
-  },
-  {
-    title: "Line Chart",
-    to: "/line",
-    icon: <TimelineOutlinedIcon />,
-  },
-  {
-    title: "Geography Chart",
-    to: "/geography",
-    icon: <MapOutlinedIcon />,
+    typeTitle: "Charts",
+    dataType: [
+      {
+        title: "Bar Chart",
+        to: "/bar",
+        icon: <BarChartOutlinedIcon />,
+      },
+      {
+        title: "Pie Chart",
+        to: "/pie",
+        icon: <PieChartOutlineOutlinedIcon />,
+      },
+      {
+        title: "Line Chart",
+        to: "/line",
+        icon: <TimelineOutlinedIcon />,
+      },
+      {
+        title: "Geography Chart",
+        to: "/geography",
+        icon: <MapOutlinedIcon />,
+      },
+    ],
   },
 ];
 
