@@ -81,13 +81,15 @@ const Sidebar = () => {
                   Imran
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                  VP Fancy Admin
+                  Fancy Admin
                 </Typography>
               </Box>
             </Box>
           )}
 
-          <Box paddingLeft={isCollapsed ? undefined : "10%"}>
+          <Box 
+          paddingLeft={isCollapsed ? undefined : "10%"}
+          >
             {SidebarFullMenuData.map((item, idx) => {
               return (
                 <SidebarMenuData
