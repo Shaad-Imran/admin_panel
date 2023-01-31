@@ -87,9 +87,7 @@ const Sidebar = () => {
             </Box>
           )}
 
-          <Box 
-          paddingLeft={isCollapsed ? undefined : "10%"}
-          >
+          <Box paddingLeft={isCollapsed ? undefined : "10%"}>
             {SidebarFullMenuData.map((item, idx) => {
               return (
                 <SidebarMenuData

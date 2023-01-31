@@ -11,7 +11,6 @@ import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 
-
 export const SidebarFullMenuData = [
   {
     dataType: [
@@ -89,7 +88,33 @@ export const SidebarFullMenuData = [
   },
 ];
 
-
+export const faqData = [
+  {
+    summary: "An Important Question",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendiss malesuada lacus ex, sit amet blandit leo lobortis eget.",
+  },
+  {
+    summary: "Another Important Question",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendiss malesuada lacus ex, sit amet blandit leo lobortis eget.",
+  },
+  {
+    summary: "Your Favorite Question",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendiss malesuada lacus ex, sit amet blandit leo lobortis eget.",
+  },
+  {
+    summary: "Some Random Question",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendiss malesuada lacus ex, sit amet blandit leo lobortis eget.",
+  },
+  {
+    summary: "The Final Question",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendiss malesuada lacus ex, sit amet blandit leo lobortis eget.",
+  },
+];
 
 export const mockDataTeam = [
   {
